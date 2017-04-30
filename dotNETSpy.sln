@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Rocks", "src\Dec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.NRefactory", "src\Decompiler\ICSharpCode.NRefactory\ICSharpCode.NRefactory.csproj", "{7C2D3688-6EA9-4D3F-B50B-3B7032B835AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.NRefactory.CSharp", "src\Decompiler\ICSharpCode.NRefactory.CSharp\ICSharpCode.NRefactory.CSharp.csproj", "{3F411863-2A53-40E5-A7CC-9849DE1B8755}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +29,15 @@ Global
 		{7C2D3688-6EA9-4D3F-B50B-3B7032B835AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C2D3688-6EA9-4D3F-B50B-3B7032B835AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C2D3688-6EA9-4D3F-B50B-3B7032B835AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F411863-2A53-40E5-A7CC-9849DE1B8755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F411863-2A53-40E5-A7CC-9849DE1B8755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F411863-2A53-40E5-A7CC-9849DE1B8755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F411863-2A53-40E5-A7CC-9849DE1B8755}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{83596FA9-1D9B-43CE-8FA8-A11468BF19FF} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 		{16708123-B443-41C4-A987-B816890924CA} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 		{7C2D3688-6EA9-4D3F-B50B-3B7032B835AE} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
+		{3F411863-2A53-40E5-A7CC-9849DE1B8755} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 	EndGlobalSection
 EndGlobal
