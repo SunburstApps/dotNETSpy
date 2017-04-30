@@ -5,6 +5,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decompiler", "Decompiler", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil", "src\Decompiler\Mono.Cecil\Mono.Cecil.csproj", "{83596FA9-1D9B-43CE-8FA8-A11468BF19FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Rocks", "src\Decompiler\Mono.Cecil.Rocks\Mono.Cecil.Rocks.csproj", "{16708123-B443-41C4-A987-B816890924CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,13 @@ Global
 		{83596FA9-1D9B-43CE-8FA8-A11468BF19FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83596FA9-1D9B-43CE-8FA8-A11468BF19FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83596FA9-1D9B-43CE-8FA8-A11468BF19FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16708123-B443-41C4-A987-B816890924CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16708123-B443-41C4-A987-B816890924CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16708123-B443-41C4-A987-B816890924CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16708123-B443-41C4-A987-B816890924CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{83596FA9-1D9B-43CE-8FA8-A11468BF19FF} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
+		{16708123-B443-41C4-A987-B816890924CA} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 	EndGlobalSection
 EndGlobal
