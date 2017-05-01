@@ -160,9 +160,5 @@
   <ItemGroup>
     <Folder Include="Support\" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Mono.Cecil.csproj" />
-    <None Include="Mono.Cecil.csproj.user" />
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
