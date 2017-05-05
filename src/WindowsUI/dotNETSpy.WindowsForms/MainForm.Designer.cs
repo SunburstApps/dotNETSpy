@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
             System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
             System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFromGACMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveCodeMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreshMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showInternalMembersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sortTreeViewByNameMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.showSearchDialogMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decompileAsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.decompileAsCSharpMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decompileAsVisualBasicMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.decompileAsILMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showInternalMembersMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sortTreeViewByNameMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -57,17 +58,34 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(toolStripSeparator1, "toolStripSeparator1");
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            resources.ApplyResources(toolStripSeparator2, "toolStripSeparator2");
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(toolStripSeparator3, "toolStripSeparator3");
+            // 
+            // toolStripSeparator4
+            // 
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            resources.ApplyResources(toolStripSeparator4, "toolStripSeparator4");
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileMenu,
             this.viewMenu,
             this.helpMenu});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(639, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // fileMenu
             // 
@@ -79,8 +97,27 @@
             toolStripSeparator2,
             this.exitMenuItem});
             this.fileMenu.Name = "fileMenu";
-            this.fileMenu.Size = new System.Drawing.Size(37, 20);
-            this.fileMenu.Text = "&File";
+            resources.ApplyResources(this.fileMenu, "fileMenu");
+            // 
+            // openFileMenuItem
+            // 
+            this.openFileMenuItem.Name = "openFileMenuItem";
+            resources.ApplyResources(this.openFileMenuItem, "openFileMenuItem");
+            // 
+            // openFromGACMenuItem
+            // 
+            this.openFromGACMenuItem.Name = "openFromGACMenuItem";
+            resources.ApplyResources(this.openFromGACMenuItem, "openFromGACMenuItem");
+            // 
+            // saveCodeMenuItem
+            // 
+            this.saveCodeMenuItem.Name = "saveCodeMenuItem";
+            resources.ApplyResources(this.saveCodeMenuItem, "saveCodeMenuItem");
+            // 
+            // exitMenuItem
+            // 
+            this.exitMenuItem.Name = "exitMenuItem";
+            resources.ApplyResources(this.exitMenuItem, "exitMenuItem");
             // 
             // viewMenu
             // 
@@ -94,100 +131,17 @@
             toolStripSeparator4,
             this.optionsMenuItem});
             this.viewMenu.Name = "viewMenu";
-            this.viewMenu.Size = new System.Drawing.Size(44, 20);
-            this.viewMenu.Text = "&View";
-            // 
-            // helpMenu
-            // 
-            this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutMenuItem});
-            this.helpMenu.Name = "helpMenu";
-            this.helpMenu.Size = new System.Drawing.Size(44, 20);
-            this.helpMenu.Text = "&Help";
-            // 
-            // aboutMenuItem
-            // 
-            this.aboutMenuItem.Name = "aboutMenuItem";
-            this.aboutMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutMenuItem.Text = "&About";
-            // 
-            // openFileMenuItem
-            // 
-            this.openFileMenuItem.Name = "openFileMenuItem";
-            this.openFileMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openFileMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.openFileMenuItem.Text = "&Open File...";
-            // 
-            // openFromGACMenuItem
-            // 
-            this.openFromGACMenuItem.Name = "openFromGACMenuItem";
-            this.openFromGACMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.openFromGACMenuItem.Text = "Open from &GAC...";
-            // 
-            // toolStripSeparator1
-            // 
-            toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
-            // 
-            // saveCodeMenuItem
-            // 
-            this.saveCodeMenuItem.Name = "saveCodeMenuItem";
-            this.saveCodeMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveCodeMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.saveCodeMenuItem.Text = "&Save Code...";
-            // 
-            // toolStripSeparator2
-            // 
-            toolStripSeparator2.Name = "toolStripSeparator2";
-            toolStripSeparator2.Size = new System.Drawing.Size(175, 6);
-            // 
-            // exitMenuItem
-            // 
-            this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.exitMenuItem.Text = "E&xit";
-            // 
-            // refreshMenuItem
-            // 
-            this.refreshMenuItem.Name = "refreshMenuItem";
-            this.refreshMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.refreshMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.refreshMenuItem.Text = "&Refresh";
-            // 
-            // toolStripSeparator3
-            // 
-            toolStripSeparator3.Name = "toolStripSeparator3";
-            toolStripSeparator3.Size = new System.Drawing.Size(248, 6);
-            // 
-            // showInternalMembersMenuItem
-            // 
-            this.showInternalMembersMenuItem.Name = "showInternalMembersMenuItem";
-            this.showInternalMembersMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.showInternalMembersMenuItem.Text = "Show non-public types/&members";
-            // 
-            // sortTreeViewByNameMenuItem
-            // 
-            this.sortTreeViewByNameMenuItem.Name = "sortTreeViewByNameMenuItem";
-            this.sortTreeViewByNameMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.sortTreeViewByNameMenuItem.Text = "Sort assembly list by &name";
-            // 
-            // toolStripSeparator4
-            // 
-            toolStripSeparator4.Name = "toolStripSeparator4";
-            toolStripSeparator4.Size = new System.Drawing.Size(248, 6);
-            // 
-            // optionsMenuItem
-            // 
-            this.optionsMenuItem.Name = "optionsMenuItem";
-            this.optionsMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.optionsMenuItem.Text = "&Options...";
+            resources.ApplyResources(this.viewMenu, "viewMenu");
             // 
             // showSearchDialogMenuItem
             // 
             this.showSearchDialogMenuItem.Name = "showSearchDialogMenuItem";
-            this.showSearchDialogMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.showSearchDialogMenuItem.Size = new System.Drawing.Size(251, 22);
-            this.showSearchDialogMenuItem.Text = "&Search...";
+            resources.ApplyResources(this.showSearchDialogMenuItem, "showSearchDialogMenuItem");
+            // 
+            // refreshMenuItem
+            // 
+            this.refreshMenuItem.Name = "refreshMenuItem";
+            resources.ApplyResources(this.refreshMenuItem, "refreshMenuItem");
             // 
             // decompileAsMenu
             // 
@@ -196,39 +150,58 @@
             this.decompileAsVisualBasicMenuItem,
             this.decompileAsILMenuItem});
             this.decompileAsMenu.Name = "decompileAsMenu";
-            this.decompileAsMenu.Size = new System.Drawing.Size(251, 22);
-            this.decompileAsMenu.Text = "&Decompile as";
+            resources.ApplyResources(this.decompileAsMenu, "decompileAsMenu");
             // 
             // decompileAsCSharpMenuItem
             // 
             this.decompileAsCSharpMenuItem.Name = "decompileAsCSharpMenuItem";
-            this.decompileAsCSharpMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.decompileAsCSharpMenuItem.Text = "&C#";
+            resources.ApplyResources(this.decompileAsCSharpMenuItem, "decompileAsCSharpMenuItem");
             // 
             // decompileAsVisualBasicMenuItem
             // 
             this.decompileAsVisualBasicMenuItem.Name = "decompileAsVisualBasicMenuItem";
-            this.decompileAsVisualBasicMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.decompileAsVisualBasicMenuItem.Text = "&Visual Basic";
+            resources.ApplyResources(this.decompileAsVisualBasicMenuItem, "decompileAsVisualBasicMenuItem");
             // 
             // decompileAsILMenuItem
             // 
             this.decompileAsILMenuItem.Name = "decompileAsILMenuItem";
-            this.decompileAsILMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.decompileAsILMenuItem.Text = "CI&L";
+            resources.ApplyResources(this.decompileAsILMenuItem, "decompileAsILMenuItem");
+            // 
+            // showInternalMembersMenuItem
+            // 
+            this.showInternalMembersMenuItem.Name = "showInternalMembersMenuItem";
+            resources.ApplyResources(this.showInternalMembersMenuItem, "showInternalMembersMenuItem");
+            // 
+            // sortTreeViewByNameMenuItem
+            // 
+            this.sortTreeViewByNameMenuItem.Name = "sortTreeViewByNameMenuItem";
+            resources.ApplyResources(this.sortTreeViewByNameMenuItem, "sortTreeViewByNameMenuItem");
+            // 
+            // optionsMenuItem
+            // 
+            this.optionsMenuItem.Name = "optionsMenuItem";
+            resources.ApplyResources(this.optionsMenuItem, "optionsMenuItem");
+            // 
+            // helpMenu
+            // 
+            this.helpMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutMenuItem});
+            this.helpMenu.Name = "helpMenu";
+            resources.ApplyResources(this.helpMenu, "helpMenu");
+            // 
+            // aboutMenuItem
+            // 
+            this.aboutMenuItem.Name = "aboutMenuItem";
+            resources.ApplyResources(this.aboutMenuItem, "aboutMenuItem");
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(639, 461);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(655, 500);
             this.Name = "MainForm";
-            this.Text = "dotNETSpy";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
