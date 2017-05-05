@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decompiler", "Decompiler", "{D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil", "src\Decompiler\Mono.Cecil\Mono.Cecil.csproj", "{83596FA9-1D9B-43CE-8FA8-A11468BF19FF}"
@@ -12,6 +13,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.Decompiler", "src\Decompiler\ICSharpCode.Decompiler\ICSharpCode.Decompiler.csproj", "{CF0FA1F1-507D-4D62-BAA4-CDCFCA6CF40B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.NRefactory.VisualBasic", "src\Decompiler\ICSharpCode.NRefactory.VisualBasic\ICSharpCode.NRefactory.VisualBasic.csproj", "{401EFC18-B263-416C-9743-52BA4F9D5B51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowsUI", "WindowsUI", "{D5452730-0500-45BD-8A19-D8ABAEF29D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNETSpy.WindowsForms", "src\WindowsUI\dotNETSpy.WindowsForms\dotNETSpy.WindowsForms.csproj", "{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +44,13 @@ Global
 		{401EFC18-B263-416C-9743-52BA4F9D5B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{401EFC18-B263-416C-9743-52BA4F9D5B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{401EFC18-B263-416C-9743-52BA4F9D5B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{83596FA9-1D9B-43CE-8FA8-A11468BF19FF} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
@@ -46,5 +58,6 @@ Global
 		{3F411863-2A53-40E5-A7CC-9849DE1B8755} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 		{CF0FA1F1-507D-4D62-BAA4-CDCFCA6CF40B} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 		{401EFC18-B263-416C-9743-52BA4F9D5B51} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
+		{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30} = {D5452730-0500-45BD-8A19-D8ABAEF29D1F}
 	EndGlobalSection
 EndGlobal
