@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,8 +8,6 @@
     <RootNamespace>Mono.Cecil</RootNamespace>
     <AssemblyName>Mono.Cecil</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\..\..\snk\mono.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -156,9 +154,6 @@
     <Compile Include="PE\TextMap.cs" />
     <Compile Include="CryptoConvert.cs" />
     <Compile Include="CryptoService.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Support\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
