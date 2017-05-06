@@ -81,5 +81,19 @@
   <ItemGroup>
     <Content Include="Resources\ILSpy-Large.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\external\WindowsAPICodePack\Microsoft.WindowsAPICodePack.Shell\Microsoft.WindowsAPICodePack.Shell.csproj">
+      <Project>{aa0c00cb-8699-4f37-bfae-40ca87acc06d}</Project>
+      <Name>Microsoft.WindowsAPICodePack.Shell</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\external\WindowsAPICodePack\Microsoft.WindowsAPICodePack\Microsoft.WindowsAPICodePack.csproj">
+      <Project>{2e1fb0df-f9bb-4909-9f32-2d9d022a8e57}</Project>
+      <Name>Microsoft.WindowsAPICodePack</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dotNETSpy.Controls\dotNETSpy.Controls.csproj">
+      <Project>{cbef8c6f-fbf1-4bc2-ba2f-483c5211ad9b}</Project>
+      <Name>dotNETSpy.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
