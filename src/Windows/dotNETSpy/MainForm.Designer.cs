@@ -1,4 +1,4 @@
-﻿namespace dotNETSpy.WindowsForms
+﻿namespace dotNETSpy
 {
     partial class MainForm
     {

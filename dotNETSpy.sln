@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.NRefactory.Visu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Windows", "Windows", "{BCA56210-B3C1-40F6-830D-B8A79215273A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNETSpy.WindowsForms", "src\Windows\dotNETSpy.WindowsForms\dotNETSpy.WindowsForms.csproj", "{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotNETSpy", "src\Windows\dotNETSpy\dotNETSpy.csproj", "{FDEA0E0E-C5A1-4BA7-B0ED-9361B8EAFF30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

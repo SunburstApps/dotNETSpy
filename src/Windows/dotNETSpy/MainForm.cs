@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace dotNETSpy.WindowsForms
+namespace dotNETSpy
 {
     public partial class MainForm : Form
     {
