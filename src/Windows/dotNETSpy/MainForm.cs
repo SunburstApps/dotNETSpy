@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dotNETSpy.Controls;
 
 namespace dotNETSpy
 {
@@ -15,6 +16,7 @@ namespace dotNETSpy
         public MainForm()
         {
             InitializeComponent();
+            MainMenuStrip.Renderer = new AppToolStripRenderer();
         }
     }
 }
