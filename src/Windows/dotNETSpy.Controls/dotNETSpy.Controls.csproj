@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBEF8C6F-FBF1-4BC2-BA2F-483C5211AD9B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dotNETSpy.Controls</RootNamespace>
+    <AssemblyName>dotNETSpy.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdditionalVisualStyleElements.cs" />
+    <Compile Include="AnimationResource.cs" />
+    <Compile Include="AppToolStripRenderer.cs" />
+    <Compile Include="ButtonType.cs" />
+    <Compile Include="ControlExtensions.cs" />
+    <Compile Include="CredentialDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CredentialDialog.designer.cs">
+      <DependentUpon>CredentialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CredentialException.cs" />
+    <Compile Include="DialogHelper.cs" />
+    <Compile Include="DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DownlevelTextMode.cs" />
+    <Compile Include="DropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ExtendedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FixedLinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Glass.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="GraphicsUtilities.cs" />
+    <Compile Include="InputDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputDialog.designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialogForm.designer.cs">
+      <DependentUpon>InputDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interop\ComDlgResources.cs" />
+    <Compile Include="Interop\COMGuids.cs" />
+    <Compile Include="Interop\HRESULT.cs" />
+    <Compile Include="Interop\IProgressDialog.cs" />
+    <Compile Include="Interop\ShellComInterfaces.cs" />
+    <Compile Include="Interop\ShellWrapperDefinitions.cs" />
+    <Compile Include="Interop\Win32Resources.cs" />
+    <Compile Include="Interop\WindowHandleWrapper.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="OkButtonClickedEventArgs.cs" />
+    <Compile Include="ProgressBarStyle.cs" />
+    <Compile Include="ProgressDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressDialog.designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SafeHandles.cs" />
+    <Compile Include="ShellAnimation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CredentialDialog.bmp" />
+    <Content Include="InputDialog.bmp" />
+    <Content Include="LICENSE.txt" />
+    <Content Include="ProgressDialog.bmp" />
+    <None Include="Resources\DropDownButtonArrow.png" />
+    <None Include="Resources\Checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtendedForm.resx">
+      <DependentUpon>ExtendedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialogForm.nl.resx">
+      <DependentUpon>InputDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialogForm.resx">
+      <DependentUpon>InputDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
