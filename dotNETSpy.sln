@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1BF5CE1-474
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICSharpCode.TreeView", "src\Windows\ICSharpCode.TreeView\ICSharpCode.TreeView.csproj", "{DDE2A481-8271-4EAC-A330-8FA6A38D13D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Pdb", "src\Decompiler\Mono.Cecil.Pdb\Mono.Cecil.Pdb.csproj", "{63ACBA1E-E153-4611-8A02-7D797E76B6DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeAnalysisDebug|Any CPU = CodeAnalysisDebug|Any CPU
@@ -178,6 +180,18 @@ Global
 		{DDE2A481-8271-4EAC-A330-8FA6A38D13D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DDE2A481-8271-4EAC-A330-8FA6A38D13D1}.Release|x64.ActiveCfg = Release|Any CPU
 		{DDE2A481-8271-4EAC-A330-8FA6A38D13D1}.Release|x64.Build.0 = Release|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.CodeAnalysisDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.CodeAnalysisDebug|Any CPU.Build.0 = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.CodeAnalysisDebug|x64.ActiveCfg = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.CodeAnalysisDebug|x64.Build.0 = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Debug|x64.Build.0 = Debug|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|x64.ActiveCfg = Release|Any CPU
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -198,5 +212,6 @@ Global
 		{C97A09E0-1999-417D-9DEF-F6E766A7762B} = {63180059-E742-49D9-A0C5-9C61866C885D}
 		{ACDF5533-8180-4F11-987F-A9F3DCCAAEFA} = {63180059-E742-49D9-A0C5-9C61866C885D}
 		{DDE2A481-8271-4EAC-A330-8FA6A38D13D1} = {BCA56210-B3C1-40F6-830D-B8A79215273A}
+		{63ACBA1E-E153-4611-8A02-7D797E76B6DA} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
 	EndGlobalSection
 EndGlobal

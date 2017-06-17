@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63ACBA1E-E153-4611-8A02-7D797E76B6DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mono.Cecil.Pdb</RootNamespace>
+    <AssemblyName>Mono.Cecil.Pdb</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0649</NoWarn>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0649</NoWarn>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.Cci.Pdb\BitAccess.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\BitSet.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\CvInfo.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\DataStream.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\DbiDbgHdr.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\DbiHeader.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\DbiModuleInfo.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\DbiSecCon.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\Interfaces.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\IntHashTable.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\MsfDirectory.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbConstant.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbDebugException.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbException.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbFile.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbFileHeader.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbFunction.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbLine.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbLines.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbReader.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbScope.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbSlot.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbSource.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\PdbTokenLine.cs" />
+    <Compile Include="Microsoft.Cci.Pdb\SourceLocationProvider.cs" />
+    <Compile Include="Mono.Cecil.Pdb\ISymUnmanagedDocumentWriter.cs" />
+    <Compile Include="Mono.Cecil.Pdb\ISymUnmanagedWriter2.cs" />
+    <Compile Include="Mono.Cecil.Pdb\ModuleMetadata.cs" />
+    <Compile Include="Mono.Cecil.Pdb\PdbHelper.cs" />
+    <Compile Include="Mono.Cecil.Pdb\PdbReader.cs" />
+    <Compile Include="Mono.Cecil.Pdb\PdbWriter.cs" />
+    <Compile Include="Mono.Cecil.Pdb\SymDocumentWriter.cs" />
+    <Compile Include="Mono.Cecil.Pdb\SymWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Microsoft.Cci.Pdb\LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mono.Cecil\Mono.Cecil.csproj">
+      <Project>{83596fa9-1d9b-43ce-8fa8-a11468bf19ff}</Project>
+      <Name>Mono.Cecil</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
