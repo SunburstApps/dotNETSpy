@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1BF5CE1-474
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mono.Cecil.Pdb", "src\Decompiler\Mono.Cecil.Pdb\Mono.Cecil.Pdb.csproj", "{63ACBA1E-E153-4611-8A02-7D797E76B6DA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.VisualStudio.Composition", "external\vs-mef\src\Microsoft.VisualStudio.Composition\Microsoft.VisualStudio.Composition.csproj", "{CFA669A3-CA14-4A90-A6FE-67E0139D5491}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeAnalysisDebug|Any CPU = CodeAnalysisDebug|Any CPU
@@ -176,6 +178,18 @@ Global
 		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|x64.ActiveCfg = Release|Any CPU
 		{63ACBA1E-E153-4611-8A02-7D797E76B6DA}.Release|x64.Build.0 = Release|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.CodeAnalysisDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.CodeAnalysisDebug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.CodeAnalysisDebug|x64.ActiveCfg = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.CodeAnalysisDebug|x64.Build.0 = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Debug|x64.Build.0 = Debug|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Release|x64.ActiveCfg = Release|Any CPU
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -195,5 +209,6 @@ Global
 		{C97A09E0-1999-417D-9DEF-F6E766A7762B} = {63180059-E742-49D9-A0C5-9C61866C885D}
 		{ACDF5533-8180-4F11-987F-A9F3DCCAAEFA} = {63180059-E742-49D9-A0C5-9C61866C885D}
 		{63ACBA1E-E153-4611-8A02-7D797E76B6DA} = {D63035D2-2DB7-4AEF-B17F-CBCD7B2FBE28}
+		{CFA669A3-CA14-4A90-A6FE-67E0139D5491} = {55D10C22-C86C-4E51-9143-8F0B3F09D23A}
 	EndGlobalSection
 EndGlobal
