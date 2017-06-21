@@ -4,3 +4,6 @@
 [submodule "external/AppxPackaging"]
 	path = external/AppxPackaging
 	url = git@github.com:SunburstApps/AppxPackaging
+[submodule "external/vs-mef"]
+	path = external/vs-mef
+	url = git@github.com:Microsoft/vs-mef
